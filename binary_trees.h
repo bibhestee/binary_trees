@@ -4,7 +4,6 @@
 /*--------- Libraries -------*/
 #include <stdlib.h>
 
-
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -44,11 +43,12 @@ int binary_tree_is_full(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
 /*----- Misc functions ------*/
 void binary_tree_print(const binary_tree_t *); /*--Print binary tree--*/
 size_t get_max(size_t left, size_t right); /*--compute the max number--*/
-
+int power(int base, int power); /*--perform exponential func--*/
 
 
 #endif /* _BINARY_TREES_H_*/
